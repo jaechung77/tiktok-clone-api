@@ -30,9 +30,8 @@ gem "active_model_serializers", require: true
 # gem 'mini_magick'
 # gem 'rmagick'
 gem 'carrierwave'
-gem 'carrierwave-aws'
-gem 'mini_magick'
-gem 'aws-sdk-rails'
+gem 'fog', '~> 1.41.0'
+
 gem 'figaro'
 # gem 'carrierwave-video'
 # gem 'carrierwave-video-thumbnailer'
