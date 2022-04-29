@@ -29,7 +29,7 @@ gem "active_model_serializers", require: true
 # gem 'mime-types'
 # gem 'mini_magick'
 # gem 'rmagick'
-gem 'carrierwave-aws'
+
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
 gem 'aws-sdk-rails'
@@ -50,11 +50,11 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
-group :development do
-  gem 'listen', '~> 3.3'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-end
+# group :development do
+#   gem 'listen', '~> 3.3'
+#   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+#   gem 'spring'
+# end
 
 group :production do
   # gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -65,4 +65,4 @@ group :production do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
