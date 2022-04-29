@@ -1,6 +1,5 @@
 CarrierWave.configure do |config|
-    config.root = Rails.root.join('tmp') # adding these...
-    config.cache_dir = 'carrierwave' # ...two lines
+    config.fog_provider = 'fog/aws'
     config.fog_credentials = {
       provider:              'AWS',                            # required
       aws_access_key_id:     ENV["AWS_ACCESS_KEY"],            # required
