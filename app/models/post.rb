@@ -1,6 +1,6 @@
 class Post < ApplicationRecord
-  mount_uploader :file, S3Uploader
-  mount_uploader :image, S3Uploader
+  mount_uploader :file, FileUploader
+  mount_uploader :image, ImageUploader
   belongs_to :user
   has_many :hashtags, dependent: :destroy
   has_many :comments, dependent: :destroy
