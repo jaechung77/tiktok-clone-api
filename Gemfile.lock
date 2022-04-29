@@ -279,6 +279,7 @@ DEPENDENCIES
   aws-sdk-rails
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.4)
+  byebug
   carrierwave (~> 1.0)
   dotenv-rails
   figaro
