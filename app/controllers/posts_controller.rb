@@ -23,6 +23,7 @@ class PostsController < ApplicationController
 
     # POST /posts
     def create
+      byebug
       @post = Post.new(post_params)
       @post.likes = 0
       @post.viewer = 0
