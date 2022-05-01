@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::API
   # protect_from_forgery except: :create
-  before_action :authorized
+  # before_action :authorized
 
   def encode_token(payload)
     JWT.encode(payload, '12341234')
