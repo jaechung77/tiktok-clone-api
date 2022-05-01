@@ -32,9 +32,7 @@ gem "active_model_serializers", require: true
 
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
-gem 'aws-sdk-rails'
-gem 'figaro'
-gem 'fog-aws'
+gem 'fog'
 # gem 'carrierwave-video'
 # gem 'carrierwave-video-thumbnailer'
 # gem 'carrierwave-ffmpeg'
@@ -45,7 +43,7 @@ gem 'omniauth-rails_csrf_protection'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
 gem 'jwt'
-gem 'byebug'
+
 # group :development, :test do
 #   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
 #   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

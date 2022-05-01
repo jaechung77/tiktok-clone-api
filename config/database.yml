@@ -21,7 +21,13 @@ default: &default
 
 development:
      <<: *default
-     database: db/development_db
+     adapter: postgresql
+     encoding: unicode
+     database: tiktok_db
+     username: jae
+     password: 2702
+     host: localhost
+     port: 5432 
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.

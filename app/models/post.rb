@@ -8,7 +8,7 @@ class Post < ApplicationRecord
   has_many  :follows, through: :user
 
   before_destroy :destroy_assets
- 
+
   def destroy_assets
       self.image.remove! if self.image
       self.save!

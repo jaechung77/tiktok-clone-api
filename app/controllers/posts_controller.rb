@@ -1,7 +1,7 @@
 require 'json'
 
 class PostsController < ApplicationController
-    skip_before_action :authorized, only: [:index, :show, :create, :update, :destroy, :mypost, :find]
+    # skip_before_action :authorized, only: [:index, :show, :create, :update, :destroy, :mypost, :find]
     before_action :follow_status, :accept_status, :requested_status, :friends_status
 
     # GET /posts
@@ -23,7 +23,6 @@ class PostsController < ApplicationController
 
     # POST /posts
     def create
-      byebug
       @post = Post.new(post_params)
       @post.likes = 0
       @post.viewer = 0
