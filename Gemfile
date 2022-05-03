@@ -29,7 +29,7 @@ gem "active_model_serializers", require: true
 # gem 'mime-types'
 # gem 'mini_magick'
 # gem 'rmagick'
-
+gem 'carrierwave-azure'
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
 gem 'fog'
